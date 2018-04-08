@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab1_SmartTree</string>
+    <string name="facebook_app_id">141365406494390</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_comment">Comment</string>
+    <string name="title_activity_interact">Interact</string>
+
+</resources>

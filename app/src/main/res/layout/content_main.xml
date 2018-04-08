@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_highlighted_text_holo_dark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.lab1_smarttree.Camera">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_about"
+        android:text="About"
+        android:layout_above="@+id/shareButton"
+        android:layout_alignStart="@+id/shareButton"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/InteracButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_interact"
+        android:text="Interact"/>
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/InteracButton"
+        android:layout_alignBottom="@+id/InteracButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_camera"
+        android:text="Camera"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nearByButton"
+        android:layout_alignBottom="@+id/nearByButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_share"
+        android:text="Share"/>
+
+    <Button
+        android:id="@+id/nearByButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_location"
+        android:text="Nearby Place"
+        android:layout_alignBaseline="@+id/commentsButton"
+        android:layout_alignBottom="@+id/commentsButton"
+        android:layout_alignStart="@+id/InteracButton"/>
+
+    <Button
+        android:id="@+id/commentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_comment"
+        android:text="Comments"
+        android:layout_above="@+id/recordButton"
+        android:layout_alignStart="@+id/cameraButton"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/coconuttree"
+        android:layout_above="@+id/InteracButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cameraButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/nearByButton"
+        android:text="                Smart Tree"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="onClick_audio"
+        android:text="Record"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nearByButton"/>
+
+</RelativeLayout>
